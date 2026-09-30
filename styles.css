@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.kpi-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.kpi-card h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.kpi-card p {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.chart-section {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.chart-section h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#inventoryChart {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    display: block;
+}

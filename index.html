@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Inventory Analytics Dashboard</h1>
+    <p id="status">Connecting to Google Sheets...</p>
+
+    <div class="kpi-grid">
+        <div class="kpi-card">
+            <h2>Total Inventory</h2>
+            <p id="totalInventory">0</p>
+        </div>
+
+        <div class="kpi-card">
+            <h2>Units Sold</h2>
+            <p id="totalUnitsSold">0</p>
+        </div>
+
+        <div class="kpi-card">
+            <h2>Total Stores</h2>
+            <p id="totalStores">0</p>
+        </div>
+
+        <div class="kpi-card">
+            <h2>Average Inventory</h2>
+            <p id="averageInventory">0</p>
+        </div>
+
+        <div class="kpi-card">
+            <h2>Critical Low Stock</h2>
+            <p id="criticalStoreCount">0</p>
+        </div>
+    </div>
+
+    <div class="kpi-grid">
+        <div class="kpi-card">
+            <h2>Total Revenue</h2>
+            <p id="totalRevenue">0</p>
+        </div>
+    </div>
+
+<section class="chart-section">
+    <h2>Inventory by store</h2>
+    <canvas id="inventoryChart" width="900" height="300"></canvas>
+</section>
+
+    <div id="data"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
